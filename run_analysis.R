@@ -6,7 +6,7 @@
 ## 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 setwd("~/Box Sync/Coursera/Getting and Cleaning Data/Project/")
-###Dowload the project files
+###Download the project files
 if(!file.exists("./getdataproject.zip")){
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(url = fileUrl, destfile = "getdataproject.zip", method = "curl")
