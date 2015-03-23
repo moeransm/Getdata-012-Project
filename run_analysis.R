@@ -68,7 +68,7 @@ meltData <- melt(extracted, id.vars=67:68, measure.vars=1:66)
 
 # Apply mean function to dataset using dcast function
 tidy_data <- dcast(meltData, Subject + Activity_Id ~ variable, mean)
-write.table(tidy_data, file = "./tidy_data.txt")
+write.table(tidy_data, file="tidy_data.txt", sep="\t", row.name=FALSE)
 
 ##Codebook
 library(memisc)
